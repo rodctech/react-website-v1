@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import './Navbar.css';
+
+import React, { useEffect, useState } from 'react';
+
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -29,8 +31,8 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
+            RevampTech
+            <i class='fas fa-bolt' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -56,7 +58,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Team
               </Link>
             </li>
 
@@ -66,11 +68,11 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Connect
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>CONNECT</Button>}
         </div>
       </nav>
     </>

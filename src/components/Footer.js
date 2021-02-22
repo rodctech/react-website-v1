@@ -1,17 +1,18 @@
-import React from 'react';
 import './Footer.css';
+
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+          Join our newsletter!
         </p>
         <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
+          Unsubscribe any time
         </p>
         <div className='input-areas'>
           <form>
@@ -29,27 +30,25 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
+            <Link to='/sign-up'>What we do</Link>
+            <Link to='/sign-up'>Who we are</Link>
             <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
+            <Link to='/'>Latest Jobs</Link>
+            {/*<Link to='/'>Investors</Link>*/}
             <Link to='/'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
             <Link to='/'>Contact</Link>
             <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
+            <h2>Recruitment</h2>
             <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
+            <Link to='/'>Find Talent</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
@@ -64,11 +63,11 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
+              RevampTech
+              <i class='fas fa-bolt' />
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>RevampTech © 2020</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
